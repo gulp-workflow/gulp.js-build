@@ -14,3 +14,13 @@ Gulpfile.js that works on js files
 - ["gulp-sourcemaps": "^1.5.2"](https://www.npmjs.com/package/gulp-sourcemaps/)
 - ["gulp-tsc": "^0.10.0"](https://www.npmjs.com/package/gulp-tsc/)
 - ["gulp-uglify": "^1.2.0"](https://www.npmjs.com/package/gulp-uglify/)
+
+## Configuration
+```json
+{
+	"environment": "development",
+	"extension": "js"
+}
+```
+
+You can change environment to **production** or extension to **ts**/**es6.js** in `config.json` or from command line: `set ENV=production` or `set ENV=ts`
