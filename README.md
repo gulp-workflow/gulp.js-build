@@ -1,4 +1,5 @@
 # gulp.js-build
+Gulpfile.js that works on js files
 
 ## Dependencies
 - ["gulp": "^3.8.11"](https://npmjs.org/package/gulp/)
