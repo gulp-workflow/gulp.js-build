@@ -6,8 +6,8 @@
   "author": "Zura Gabievi <zura.gabievi@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "set ENV=development && gulp",
-    "start": "set ENV=production && gulp"
+    "test": "set ENV=development && gulp js",
+    "start": "set ENV=production && gulp js"
   },
   "devDependencies": {
     "gulp": "^3.8.11",

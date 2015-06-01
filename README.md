@@ -31,9 +31,9 @@ Install `bower_components` as in example: `bower install crafty`, then open `Gul
 
 - `gulp js:clean` - cleans `./dist/assets/js` directory
 - `gulp js:copy` - copies files from `./bower_components`, but that task need to be updated for every component
-- `gulp js:build` - concatenates `js/ts/es6.js` files from `./src/assets/js` and created `bundle.js` in `./dist/assets/js`
+- `gulp js:build` - concatenates `js/ts/es6.js` files from `./src/assets/js` and creates `bundle.js` in `./dist/assets/js`
 - `gulp js:watch` - watches `js/ts/es6.js` files in `./src/assets/js` for chages
-- `gulp` - default task that cleans, copies, builds and watches javascript files
+- `gulp js` - default task that cleans, copies, builds and watches javascript files
 
 ---
 
