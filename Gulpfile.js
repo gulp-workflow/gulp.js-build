@@ -1,4 +1,5 @@
 // gulp modules
+var del = require('del');
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
@@ -11,7 +12,7 @@ var EXT = process.env.EXT || config.extension;
 
 // clean task
 gulp.task('js:clean', function() {
-	gulp.src('./dist/assets/js/*', {read: false}).pipe($.clean());
+	del(['./dist/assets/js/*']);
 });
 
 // copy task

@@ -3,8 +3,8 @@ Gulpfile.js that works on js files
 
 ## Dependencies
 - ["gulp": "^3.8.11"](https://npmjs.org/package/gulp/)
+- ["del": "^1.2.0"](https://www.npmjs.com/package/del/)
 - ["gulp-babel": "^5.1.0"](https://www.npmjs.com/package/gulp-babel/)
-- ["gulp-clean": "^0.3.1"](https://www.npmjs.com/package/gulp-clean/)
 - ["gulp-concat": "^2.5.2"](https://www.npmjs.com/package/gulp-concat/)
 - ["gulp-if": "^1.2.5"](https://www.npmjs.com/package/gulp-if/)
 - ["gulp-load-plugins": "^0.10.0"](https://www.npmjs.com/package/gulp-load-plugins/)
