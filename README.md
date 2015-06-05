@@ -1,6 +1,7 @@
 # gulp.js-build
 Gulpfile.js that works on js files
 
+[![GitHub version](https://badge.fury.io/gh/zgabievi%2Fgulp.js-build.svg)](http://badge.fury.io/gh/zgabievi%2Fgulp.js-build)
 [![Build Status](https://semaphoreci.com/api/v1/projects/13d5d44e-8daa-474a-b3e2-3aa4cd2c1adf/444090/shields_badge.svg)](https://semaphoreci.com/zgabievi/gulp-js-build)
 
 ## Dependencies
