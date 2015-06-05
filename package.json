@@ -1,6 +1,6 @@
 {
   "name": "Gulp",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Gulpfile.js that works on js files",
   "main": "Gulpfile.js",
   "author": "Zura Gabievi <zura.gabievi@gmail.com>",

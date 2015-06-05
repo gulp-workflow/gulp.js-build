@@ -33,7 +33,7 @@ You can change environment to **production** or extension to **ts**/**es6.js** i
 
 ## Useage
 Download repository and in your command line run `npm install`, this will download `node_modules` and you are about to go.
-Install `bower_components` as in example: `bower install crafty`, then open `Gulpfile.js` and add line in `js:copy` task.
+Install `bower_components` as in example: `bower install is_js`, then open `Gulpfile.js` and add line in `js:copy` task.
 
 - `gulp js:clean` - cleans `./dist/assets/js` directory
 - `gulp js:copy` - copies files from `./bower_components`, but that task need to be updated for every component

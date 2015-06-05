@@ -17,7 +17,7 @@ gulp.task('js:clean', function() {
 
 // copy task
 gulp.task('js:copy', function() {
-	gulp.src('./bower_components/crafty/dist/crafty.*').pipe(gulp.dest('./dist/assets/js'));
+	gulp.src('./bower_components/is_js/is.*').pipe(gulp.dest('./dist/assets/js'));
 });
 
 // build task
