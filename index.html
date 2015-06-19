@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gulp.js-build by zgabievi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Gulp.js-build</h1>
+      <h2 class="project-tagline">Gulpfile.js that works on js files</h2>
+      <a href="https://github.com/zgabievi/gulp.js-build" class="btn">View on GitHub</a>
+      <a href="https://github.com/zgabievi/gulp.js-build/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/zgabievi/gulp.js-build/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="gulpjs-build" class="anchor" href="#gulpjs-build" aria-hidden="true"><span class="octicon octicon-link"></span></a>gulp.js-build</h1>
+
+<p>Gulpfile.js that works on js files</p>
+
+<p><a href="http://badge.fury.io/gh/zgabievi%2Fgulp.js-build"><img src="https://badge.fury.io/gh/zgabievi%2Fgulp.js-build.svg" alt="GitHub version"></a>
+<a href="https://semaphoreci.com/zgabievi/gulp-js-build"><img src="https://semaphoreci.com/api/v1/projects/13d5d44e-8daa-474a-b3e2-3aa4cd2c1adf/444090/shields_badge.svg" alt="Build Status"></a>
+<a href="https://www.codacy.com/app/zgabievi/gulp-js-build"><img src="https://www.codacy.com/project/badge/7ec3c5b75bf94761a6904dc14bf85677" alt="Codacy Badge"></a>
+<a href="https://david-dm.org/zgabievi/gulp.js-build"><img src="https://david-dm.org/zgabievi/gulp.js-build.svg" alt="Dependency Status"></a>
+<a href="https://david-dm.org/zgabievi/gulp.js-build#info=devDependencies"><img src="https://david-dm.org/zgabievi/gulp.js-build/dev-status.svg" alt="devDependency Status"></a></p>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<ul>
+<li><a href="https://npmjs.org/package/gulp/">"gulp": "^3.8.11"</a></li>
+<li><a href="https://www.npmjs.com/package/del/">"del": "^1.2.0"</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-babel/">"gulp-babel": "^5.1.0"</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-concat/">"gulp-concat": "^2.5.2"</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-if/">"gulp-if": "^1.2.5"</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-load-plugins/">"gulp-load-plugins": "^0.10.0"</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-plumber/">"gulp-plumber": "^1.0.1"</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-rename/">"gulp-rename": "^1.2.2"</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-size/">"gulp-size": "^1.2.1"</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-sourcemaps/">"gulp-sourcemaps": "^1.5.2"</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-tsc/">"gulp-tsc": "^0.10.0"</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-uglify/">"gulp-uglify": "^1.2.0"</a></li>
+</ul>
+
+<h2>
+<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration</h2>
+
+<div class="highlight highlight-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>environment<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>development<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>extension<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>js<span class="pl-pds">"</span></span>
+}</pre></div>
+
+<p>You can change environment to <strong>production</strong> or extension to <strong>ts</strong>/<strong>es6.js</strong> in <code>config.json</code> or from command line: <code>set ENV=production</code> or <code>set ENV=ts</code></p>
+
+<h2>
+<a id="useage" class="anchor" href="#useage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Useage</h2>
+
+<p>Download repository and in your command line run <code>npm install</code>, this will download <code>node_modules</code> and you are about to go.
+Install <code>bower_components</code> as in example: <code>bower install is_js</code>, then open <code>Gulpfile.js</code> and add line in <code>js:copy</code> task.</p>
+
+<ul>
+<li>
+<code>gulp js:clean</code> - cleans <code>./dist/assets/js</code> directory</li>
+<li>
+<code>gulp js:copy</code> - copies files from <code>./bower_components</code>, but that task need to be updated for every component</li>
+<li>
+<code>gulp js:build</code> - concatenates <code>js/ts/es6.js</code> files from <code>./src/assets/js</code> and creates <code>bundle.js</code> in <code>./dist/assets/js</code>
+</li>
+<li>
+<code>gulp js:watch</code> - watches <code>js/ts/es6.js</code> files in <code>./src/assets/js</code> for chages</li>
+<li>
+<code>gulp js</code> - default task that cleans, copies, builds and watches javascript files</li>
+</ul>
+
+<hr>
+
+<ul>
+<li>
+<code>npm test</code> - sets environment to development and runs default task of gulp</li>
+<li>
+<code>npm start</code> - sets environment to production and runs default task of gulp</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/zgabievi/gulp.js-build">Gulp.js-build</a> is maintained by <a href="https://github.com/zgabievi">zgabievi</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
